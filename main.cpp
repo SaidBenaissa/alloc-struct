@@ -9,7 +9,8 @@ struct A{
 int main(){
 //  Dynamic allocation of struct A
     cout << "Dynamic allocation of struct A" << endl;
-    struct A *objA = (A*)malloc(sizeof(A));
+//    struct A *objA = (A*)malloc(sizeof(A));
+    A *objA = new A;
     objA->a1 = 1;
     (*objA).a2 = 2;
 
